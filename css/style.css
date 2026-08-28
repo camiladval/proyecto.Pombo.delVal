@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    text-align: left top;
+    width: 150px;
+}
+
+.barra {
+    text-decoration: none;
+    color: #8B6E5C;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center top;
+    font-size: 70%;
+}
+
+.arriba {
+    text-align: center;
+    background-color: #fff9f2;
+}
+
+.forms {
+    text-decoration: none;
+    color: #8B6E5C;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center top;
+    font-size: 70%;
+}
+
+.abajo {
+    text-decoration: none;
+    color: #8B6E5C;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center top;
+    font-size: 70%;
+    background-color: #fff9f2;
+}
