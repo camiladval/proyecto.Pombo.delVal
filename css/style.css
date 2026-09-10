@@ -81,7 +81,7 @@
     text-decoration:none;
     padding: 5px;
     margin-right: 20px;
-    width: 120px;
+    width:150px;
     border: 20px;
     text-decoration:none;
     background-color:#fbeddc;
@@ -101,6 +101,7 @@ a{
 .tituloproductos {
     color: #5e4934;
     margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .productosaleatorios {
@@ -113,11 +114,23 @@ a{
     padding: 15px;
     margin-bottom: 10px;
     border: 1px solid rgb(115, 83, 41);
-    width: 200px;
+    width: 250px;
     margin-right: 10px;
 }
 
 .imagenes {
-    width: 100px;
-    height: 100px;
+    width: 215px;
+    height: 250px;
+}
+
+.boton {
+    background-color: #5e4934;
+    color: #fbeddc;
+    padding: 10px;
+}
+
+.productosmasvendidos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
