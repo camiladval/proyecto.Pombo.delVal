@@ -134,3 +134,53 @@ a{
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+.producto.detalle {
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.imagenfija{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.productoinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews{
+    background-color:#fbeddc
+}
+.tituloreviews{
+    color:#5e4934;
+    text-decoration:underline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+.titulolampara{
+    color:#5e4934;
+    text-decoration:underline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 120%;
+}
+
+.textopiniones{
+    color:#5e4934;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 90%;   
+}
+
+.reviews{
+    background-color: #fbeddc;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+
