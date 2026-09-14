@@ -45,14 +45,24 @@
 }
 
 .forms {
-    color: #fbeddc;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: right;
-    font-size: 70%;
+    display: flex;
+    justify-content: right;
+    margin: 20px;
     width: 33%;
+}
+
+.formsinput{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #8B6E5C;
+    border-radius: 5px;
+}
+
+.formsbutton{
+    padding: 10px;
+    background-color: #8B6E5C;
+    color: #fbeddc;
+    border-radius: 5px;
 }
 
 .abajo {
@@ -72,7 +82,7 @@
     text-decoration:none;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
-    font-size: 75%;
+    font-size: 100%;
     text-align:left;
 }
 
@@ -81,7 +91,7 @@
     text-decoration:none;
     padding: 5px;
     margin-right: 20px;
-    width:150px;
+    width: 200px;
     border: 20px;
     text-decoration:none;
     background-color:#fbeddc;
@@ -102,6 +112,7 @@ a{
     color: #5e4934;
     margin-bottom: 20px;
     text-decoration: underline;
+    margin-top: 20px;
 }
 
 .productosaleatorios {
@@ -116,6 +127,10 @@ a{
     border: 1px solid rgb(115, 83, 41);
     width: 250px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 }
 
 .imagenes {
@@ -127,6 +142,7 @@ a{
     background-color: #5e4934;
     color: #fbeddc;
     padding: 10px;
+    width: 90px;
 }
 
 .productosmasvendidos {
@@ -150,9 +166,6 @@ a{
     flex-direction: column;
 }
 
-.reviews{
-    background-color:#fbeddc
-}
 .tituloreviews{
     color:#5e4934;
     text-decoration:underline;
@@ -169,18 +182,35 @@ a{
     font-size: 120%;
 }
 
-.textopiniones{
+.textopiniones {
     color:#5e4934;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 90%;   
 }
 
-.reviews{
+.reviews {
     background-color: #fbeddc;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.contenidoproduct {
     display:flex;
     flex-direction: column;
-    width:100%;
-    
+    flex-wrap: wrap;
+}
+
+.productoscategoria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.titulocategoria{
+    color: #5e4934;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    margin-top: 20px;
 }
 
