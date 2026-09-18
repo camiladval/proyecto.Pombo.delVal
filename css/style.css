@@ -151,21 +151,27 @@ a{
     flex-direction: row;
 }
 
-.producto.detalle {
-    padding: 15px;
-    margin-bottom: 30px;
-}
-
 .imagenfija{
     width: 40%;
     border-radius: 10px;
+    margin-right: 24px; 
 }
 
-.productoinfo {
-    display: flex;
+.contenidoproduct {
+    display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
+.imagen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.caracteristicas_product { 
+    margin-left:30px;
+}
 .tituloreviews{
     color:#5e4934;
     text-decoration:underline;
@@ -179,7 +185,7 @@ a{
     text-decoration:underline;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
-    font-size: 120%;
+    font-size: 160%;
 }
 
 .textopiniones {
@@ -195,11 +201,7 @@ a{
     margin-bottom: 20px;
 }
 
-.contenidoproduct {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 
 .productoscategoria{
     display: flex;
@@ -213,4 +215,34 @@ a{
     text-decoration: underline;
     margin-top: 20px;
 }
+
+.contpadrelog {
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    padding: 20px
+}
+.formulariolog {
+    background-color: #8B6E5C;
+    color:#fbeddc;
+    padding: 30px;
+    border-radius: 5px;
+    width: 60%;
+    text-align:center; 
+}
+.contenidoform {
+    display:flex;
+    flex-direction: column;
+    text-align:left;
+    margin-bottom: 20px;
+}
+.boton {
+    padding: 15px;
+    background-color: #fbeddc;
+    color:#5e4934;
+    border-radius: 5px; 
+    width: 140px;
+    
+}
+
 
