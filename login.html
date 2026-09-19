@@ -13,7 +13,7 @@
             <a href="./index.html" class="logo2">
                 <img src="./img/Cali Home Logo.png" alt="logo" class="logo">
             </a>
-            <nav>
+            <nav class="navheader">
             <ul class="navarriba">
                 <li class="listahome"><a class="barra" href="./index.html">Home</a></li>
                 <li class="listahome"><a class="barra" href="./login.html">Login</a></li>
@@ -58,21 +58,20 @@
             </div>
            
             <section class="formulariolog">
-              <form action="./index.html" method="GET" >
+              <form action="./index.html" method="GET" class="formlogin">
                     <div class="contenidoform">
                         <label for="email">Email:</label>
-                        <br>
-                        <input type="email" id="email log in" name="email" value="" required>
+                        <input type="email" id="email log in" name="email" value="" placeholder="Introduce tu email" class="inputlogin">
                     </div>
                     <div class="contenidoform">
                         <label for="pass">Contraseña: </label>
-                        <input type="password" id="pass" name="pass" value="" placeholder="Introduce tu contraseña"></input>
+                        <input type="password" id="pass" name="pass" value="" placeholder="Introduce tu contraseña" class="inputlogin"></input>
                     </div>
                     <div class="contenidoform">
-                        <button type="submit" class="boton">Ingresar</button>
+                        <button type="submit" class="botonform">Ingresar</button>
                     </div>
-                    <div>
-                        <p>No tengo cuenta</p><a href="./register.html">¡Registrate acá!</a>
+                    <div class="notengocuenta">
+                        <p>No tengo cuenta</p><a href="./register.html" class="registrateaca">¡Registrate acá!</a>
                     </div>
                 </form>
                 

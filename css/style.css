@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+body{
+    background-color: #fff9f2;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -22,6 +26,7 @@
 
 .logo2 {
     width: 33%;
+    order: 1;
 }
 
 .barra {
@@ -34,9 +39,14 @@
 
 .navarriba {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
+}
+
+.navheader{
+    order: 3;
+    width: 33%;
 }
 
 .listahome {
@@ -46,9 +56,9 @@
 
 .forms {
     display: flex;
-    justify-content: right;
-    margin: 20px;
+    justify-content: center;
     width: 33%;
+    order: 2;
 }
 
 .formsinput{
@@ -67,23 +77,25 @@
 
 .abajo {
     text-decoration: none;
-    color: #8B6E5C;
+    color:#fff9f2;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     text-align: center top;
-    font-size: 70%;
-    background-color: #fff9f2;
+    font-size: 100%;
+    background-color: #8B6E5C;
     text-align: center;
+    padding: 15px;
 }
 
 .productosycategoria{
-    text-decoration:none;
+    text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-size: 100%;
-    text-align:left;
+    text-align: left;
+    padding: 20px;
 }
 
 .categorymenu{
@@ -152,15 +164,15 @@ a{
 }
 
 .imagenfija{
-    width: 40%;
+    width: 400px;
     border-radius: 10px;
-    margin-right: 24px; 
+    margin-bottom: 20px;
 }
 
 .contenidoproduct {
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .imagen {
@@ -170,14 +182,22 @@ a{
 }
 
 .caracteristicas_product { 
-    margin-left:30px;
+    margin-left:40px;
+    font-size: 18px;
 }
+
+.parrafocaracteristicas{
+    margin-bottom: 15px;
+    color: #5e4934;
+}
+
 .tituloreviews{
     color:#5e4934;
     text-decoration:underline;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
-    font-size: 90%;
+    font-size: 110%;
+    margin-bottom: 20px;
 }
 
 .titulolampara{
@@ -185,23 +205,27 @@ a{
     text-decoration:underline;
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
-    font-size: 160%;
+    font-size: 130%;
+    margin-bottom: 20px;
 }
 
 .textopiniones {
     color:#5e4934;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    font-size: 90%;   
+    font-size: 90%;  
+    margin-bottom: 5px; 
+}
+
+.parraforeviews {
+    margin-bottom: 5px;
 }
 
 .reviews {
     background-color: #fbeddc;
-    width:100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
 }
-
-
 
 .productoscategoria{
     display: flex;
@@ -220,29 +244,100 @@ a{
     display:flex; 
     flex-direction: row;
     align-items: center;
-    padding: 20px
+    padding: 20px;
 }
+
 .formulariolog {
-    background-color: #8B6E5C;
+    background-color: #8b6e5cef;
     color:#fbeddc;
     padding: 30px;
     border-radius: 5px;
-    width: 60%;
-    text-align:center; 
+    margin-left: 20%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.registrateaca{
+    color: #fbeddc;
+}
+
+.notengocuenta{
+    text-align: center;
+}
+
+.formlogin{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.inputlogin{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 .contenidoform {
     display:flex;
     flex-direction: column;
     text-align:left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.boton {
+.botonform {
     padding: 15px;
     background-color: #fbeddc;
     color:#5e4934;
     border-radius: 5px; 
     width: 140px;
-    
+    align-self: center;
 }
 
+.mainregistro{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
 
+.seccionregistro{
+    background-color: #8b6e5cef;
+    color:#fbeddc;
+    padding: 30px;
+    border-radius: 5px;
+    margin-left: 20%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formregistro {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.labelregistro {
+    color:#fff9f2;
+    margin-bottom: 5px;
+}
+
+.inputregistro {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.terminos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cuentaexistente {
+    text-align: center;
+    margin-top: 20px;
+    color: #fbeddc;
+}
