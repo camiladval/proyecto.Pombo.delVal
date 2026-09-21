@@ -341,3 +341,33 @@ a{
     margin-top: 20px;
     color: #fbeddc;
 }
+
+.contenidoresultado {
+    display:flex;
+    flex-direction: row;
+
+}
+.resultadobusqueda {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.busqueda {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(115, 83, 41);
+    width: 250px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.errorbusqueda {
+    border:solid 2px rgb(115, 83, 41);
+    padding: 10px;
+    background-color: #fbeddc;
+    margin-bottom: 20px;
+}
