@@ -76,13 +76,11 @@ body{
 }
 
 .abajo {
-    text-decoration: none;
     color:#fff9f2;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    text-align: center top;
     font-size: 100%;
     background-color: #8B6E5C;
     text-align: center;
@@ -99,19 +97,15 @@ body{
 }
 
 .categorymenu{
-    list-style-type: none;
-    text-decoration:none;
     padding: 5px;
     margin-right: 20px;
     width: 200px;
     border: 20px;
-    text-decoration:none;
     background-color:#fbeddc;
     color:#8B6E5C;
 }
 
 a{
-    text-decoration:none;
     color:#8B6E5C;
 }
 
@@ -170,7 +164,7 @@ a{
 }
 
 .contenidoproduct {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 20px;
 }
