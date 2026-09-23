@@ -540,7 +540,6 @@ a{
 
     .categorymenu {
         width: 100%;
-        margin-right: 0;
     }
 
     .productosaleatorios{
@@ -561,21 +560,16 @@ a{
 
     .productos{
         width: 100%;
-        margin-right: 0;
-        height: auto;
         margin-bottom: 15px;
     }
 
     .busqueda {
         width: 100%;
-        margin-right: 0;
-        height: auto;
         margin-bottom: 15px;
     }
 
     .imagenes {
         width: 100%;
-        height: auto;
         margin-bottom: 15px;
     }
 
@@ -600,13 +594,11 @@ a{
     }
 
     .caracteristicas_product {
-        margin-left: 0;
         margin-top: 20px;
         font-size: 16px;
     }
 
     .formulariolog {
-        margin-left: 0;
         width: 100%;
         padding: 20px;
         margin-bottom: 10px;
@@ -617,7 +609,6 @@ a{
     }
 
     .seccionregistro {
-        margin-left: 0;
         width: 100%;
         padding: 20px;
         margin-bottom: 10px;
