@@ -236,8 +236,8 @@ a{
 
 .contpadrelog {
     display:flex; 
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .formulariolog {
@@ -245,11 +245,12 @@ a{
     color:#fbeddc;
     padding: 30px;
     border-radius: 5px;
-    margin-left: 20%;
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .obligatorio{
@@ -295,8 +296,8 @@ a{
 
 .mainregistro{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .seccionregistro{
@@ -304,11 +305,12 @@ a{
     color:#fbeddc;
     padding: 30px;
     border-radius: 5px;
-    margin-left: 20%;
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .formregistro {
