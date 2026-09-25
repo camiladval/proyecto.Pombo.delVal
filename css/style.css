@@ -365,12 +365,19 @@ a{
     justify-content: space-between;
     height: 500px;
 }
-
+.tituloresultados {
+    color: #5e4934;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    margin-top: 20px;
+    display:none;
+}
 .errorbusqueda {
     border:solid 2px rgb(115, 83, 41);
     padding: 10px;
     background-color: #fbeddc;
     margin-bottom: 20px;
+    display:none;
 }
 
 @media (max-width: 768px) {
