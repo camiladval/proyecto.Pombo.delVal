@@ -47,7 +47,7 @@ fetch('https://dummyjson.com/products/category/kitchen-accessories')
     for (let i = 0; i < data.products.length && i < 10; i++) {
         productos1 += `
         <article class="productos">
-            <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}" class="imagenes">
+            <img src="${data.products[i].images[0]}" alt="${data.products[i].title}" class="imagenes">
             <h3>${data.products[i].title}</h3>
             <p>${data.products[i].description}</p>
             <p class="precio">$${data.products[i].price}</p>
@@ -70,7 +70,7 @@ fetch('https://dummyjson.com/products/category/groceries')
     for (let i = 0; i < data.products.length && i < 10; i++) {
         productos2 += `
         <article class="productos">
-            <img src="${data.products[i].thumbnail}" alt="${data.products[i].title}" class="imagenes">
+            <img src="${data.products[i].images[0]}" alt="${data.products[i].title}" class="imagenes">
             <h3>${data.products[i].title}</h3>
             <p>${data.products[i].description}</p>
             <p class="precio">$${data.products[i].price}</p>
