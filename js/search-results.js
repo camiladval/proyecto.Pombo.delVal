@@ -1,5 +1,5 @@
 let formulario = document.querySelector(".forms");
-let buscador = document.querySelector(".formsinput");ç
+let buscador = document.querySelector(".formsinput");
 let listaCategorias= document.querySelector("#lista-categorias");
 let opcionesCategoria= "";
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,117 +7,58 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Producto</title>
+        <title>Log in</title>
     </head>
-
     <body>
-
-        <header class="menu">
+         <header class="menu">
             <a href="./index.html" class="logo2">
                 <img src="./img/CaliHomeLogo.png" alt="logo" class="logo">
             </a>
-
             <nav class="navheader">
-                <ul class="navarriba">
-                    <li class="listahome">
-                        <a class="barra" href="./index.html">Home</a>
-                    </li>
-                    <li class="listahome">
-                        <a class="barra" href="./login.html">Login</a>
-                    </li>
-                    <li class="listahome">
-                        <a class="barra" href="./register.html">Registrarse</a>
-                    </li>
-                </ul>
+            <ul class="navarriba">
+                <li class="listahome"><a class="barra" href="./index.html">Home</a></li>
+                <li class="listahome"><a class="barra" href="./login.html">Login</a></li>
+                <li class="listahome"><a class="barra" href="./register.html">Registrarse</a></li>
+            </ul>
+             
             </nav>
-
             <form action="./search-results.html" method="get" class="forms">
                 <input type="text" name="q" placeholder="Buscar productos..." class="formsinput">
                 <button type="submit" class="formsbutton">Buscar</button>
             </form>
+            
         </header>
-
-        <main class="contenido">
-
-            <aside class="productosycategoria">
-                <h2 class="categorymenu">Categorías</h2>
-                <ul class="categorymenu" id="lista-categorias">
-
-                </ul>
-            </aside>
-
-            <div class="contenidoproduct">
-
-                <section>
-                    <article class="producto-detalle">
-
-                        <div class="producto-info">
-
-                            <h1 class="titulolampara"></h1>
-
-                            <div class="imagen">
-
-                                <img src="" alt="" class="imagenfija">
-
-                                <div class="caracteristicas_product">
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Marca:</strong>
-                                        <span class="marca"></span>
-                                    </p>
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Descripción detallada:</strong>
-                                        <span class="descripcion"></span>
-                                    </p>
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Precio:</strong>
-                                        $<span class="precio"></span>
-                                    </p>
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Categoría:</strong>
-                                        <a class="categoria"></a>
-                                    </p>
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Stock disponible:</strong>
-                                        <span class="stock"></span>
-                                    </p>
-
-                                    <p class="parrafocaracteristicas">
-                                        <strong>Tags:</strong>
-                                        <span class="tags"></span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-
-                <section class="reviews">
-
-                    <h2 class="tituloreviews">Opiniones del producto</h2>
-
-                    <article class="opiniones">
-
-                    </article>
-
-                </section>
-
-            </div>
-
+         <main class="contpadrelog">
+            <section class="formulariolog">
+              <form action="./index.html" method="GET" class="formlogin">
+                    <div class="contenidoform">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" value="" placeholder="Introduce tu email" class="inputlogin" id="email"></input>
+                        <p class="obligatorio_erroremail">Obligatorio</p>
+                    </div>
+                    <div class="contenidoform">
+                        <label for="pass">Contraseña: </label>
+                        <input type="password" name="pass" value="" placeholder="Introduce tu contraseña" class="inputlogin" id="pass"></input>
+                        <p class="obligatorio_errorpass">Obligatorio</p>
+                    </div>
+                    <div class="contenidoform">
+                        <button type="submit" class="botonform" id="loginButton">Ingresar</button>
+                    </div>
+                    <div class="notengocuenta">
+                        <p>No tengo cuenta</p><a href="./register.html" class="registrateaca">¡Registrate acá!</a>
+                    </div>
+                
+                </form>
+            </section>
         </main>
-
+        
         <footer class="abajo">
             <p>Camila del Val - Milagros Pombo</p>
+              
         </footer>
-
-        <script src="./js/product.js"></script>
+    
+        <script src="./js/login.js"></script>
         <script src="./js/saludo.js"></script>
         <script src="./js/logout.js"></script>
-
     </body>
 </html>

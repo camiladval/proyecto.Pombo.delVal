@@ -380,6 +380,11 @@ a{
     display:none;
 }
 
+.bienvenido {
+    color: #fbeddc;
+    font-family: "Montserrat", sans-serif;
+}
+
 @media (max-width: 768px) {
 
     .menu {

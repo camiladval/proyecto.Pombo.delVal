@@ -31,6 +31,7 @@ formulariologin.addEventListener("submit", function(e) {
     else{
 
         localStorage.setItem("email", email.value);
+    
         this.submit();
     }
 
