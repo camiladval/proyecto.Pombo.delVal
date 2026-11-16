@@ -12,13 +12,14 @@ let id= queryStringObj.get("category");
 let tituloCategoria = document.querySelector(".titulocategoria");
 
 formulario.addEventListener("submit", function(e) {
+        e.preventDefault();
+
 
     if (buscador.value == "") {
-        e.preventDefault();
         alert("El buscador no puede estar vacío");
     } else if (buscador.value.length < 3) {
-        e.preventDefault();
         alert("La búsqueda debe tener al menos 3 caracteres");
+        this.submit();
     }
 
 });
@@ -32,7 +33,7 @@ fetch('https://dummyjson.com/products/categories')
     console.log(data);
 
 for (let i = 0; i < data.length; i++) {
-    opcionesCategoria += `<li><a href="./category.html?category=${data[i].name}">${data[i].name}</a></li>`;
+    opcionesCategoria += `<li><a href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
 }
 listaCategorias.innerHTML = opcionesCategoria;
 })

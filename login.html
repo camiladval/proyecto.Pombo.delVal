@@ -32,16 +32,16 @@
               <form action="./index.html" method="GET" class="formlogin">
                     <div class="contenidoform">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" value="" placeholder="Introduce tu email" class="inputlogin">
-                        <p class="obligatorio">Obligatorio</p>
+                        <input type="email" name="email" value="" placeholder="Introduce tu email" class="inputlogin" id="email"></input>
+                        <p class="obligatorio_erroremail">Obligatorio</p>
                     </div>
                     <div class="contenidoform">
                         <label for="pass">Contraseña: </label>
-                        <input type="password" name="pass" value="" placeholder="Introduce tu contraseña" class="inputlogin"></input>
-                        <p class="obligatorio">Obligatorio</p>
+                        <input type="password" name="pass" value="" placeholder="Introduce tu contraseña" class="inputlogin" id="pass"></input>
+                        <p class="obligatorio_errorpass">Obligatorio</p>
                     </div>
                     <div class="contenidoform">
-                        <button type="submit" class="botonform">Ingresar</button>
+                        <button type="submit" class="botonform" id="loginButton">Ingresar</button>
                     </div>
                     <div class="notengocuenta">
                         <p>No tengo cuenta</p><a href="./register.html" class="registrateaca">¡Registrate acá!</a>
