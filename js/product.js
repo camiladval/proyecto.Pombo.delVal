@@ -17,75 +17,65 @@ let textoOpiniones = "";
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
+let mensaje = document.querySelector(".obligatorio_errorheader");
 
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();
+
     if (buscador.value == "") {
-    
-        alert("El buscador no puede estar vacío");
+       mensaje.innerText = "La búsqueda no debe estar vacía";
     } else if (buscador.value.length < 3) {
-    
-        alert("La búsqueda debe tener al menos 3 caracteres");
+        mensaje.innerText = "La búsqueda debe tener al menos 3 caracteres";
+    } else {
         this.submit();
     }
-
 });
 
 fetch('https://dummyjson.com/products/categories')
 .then(function(response){
     return response.json();
 })
-
 .then(function(data){
-    console.log(data);
-
-for (let i = 0; i < data.length; i++) {
-    opcionesCategoria += `<li><a href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
-}
-listaCategorias.innerHTML = opcionesCategoria;
+    for (let i = 0; i < data.length; i++) {
+        opcionesCategoria += `<li><a href="./category.html?category=${data[i].slug}">${data[i].name}</a></li>`;
+    }
+    listaCategorias.innerHTML = opcionesCategoria;
 })
-
 .catch(function(error){
     console.log(error);
 })
 
 fetch(`https://dummyjson.com/products/${id}`)
-
 .then(function(response){
     return response.json();
 })
-
 .then(function(data){
-    console.log(data);
-
     let cantidadTags = data.tags.length;
 
     titulo.innerText = data.title;
     imagen.src = data.images[0];
     imagen.alt = data.title;
-    descripcion.innerText = data.description;
-    precio.innerText = data.price;
-    stock.innerText = data.stock;
+    descripcion.innerHTML = `<strong>Descripción detallada:</strong> ${data.description}`;
+    precio.innerHTML = `<strong>Precio:</strong> $${data.price}`;
+    stock.innerHTML = `<strong>Stock disponible:</strong> ${data.stock} unidades`;
 
     if (data.brand == undefined) {
-        marca.innerText = "Sin marca";
+        marca.innerHTML = "<strong>Marca:</strong> Sin marca";
     } else {
-        marca.innerText = data.brand;
+        marca.innerHTML = `<strong>Marca:</strong> ${data.brand}`;
     }
 
     categoria.innerText = data.category;
-    categoria.href = `./category.html?category=${data.category}`;
-
 
     if (cantidadTags > 3) {
         cantidadTags = 3;
     }
 
     for (let i = 0; i < cantidadTags; i++) {
-        textoTags += `${data.tags[i]} `;
+        textoTags += `<a href="./category.html?category=${data.category}">${data.tags[i]}</a> `;
     }
+    tags.innerHTML = "<strong>Tags:</strong> " + textoTags;
 
-    tags.innerText = textoTags;
 
     for (let i = 0; i < data.reviews.length; i++) {
         textoOpiniones += `

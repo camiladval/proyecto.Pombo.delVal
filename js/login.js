@@ -5,18 +5,22 @@ let email = document.querySelector("#email");
 let password = document.querySelector("#pass");
 let erroremail= document.querySelector(".obligatorio_erroremail");
 let errorpass= document.querySelector(".obligatorio_errorpass");
+let mensaje = document.querySelector(".obligatorio_errorheader");
 
 
 formulario.addEventListener("submit", function(e) {
- e.preventDefault();
+    e.preventDefault();
+
     if (buscador.value == "") {
-        alert("El buscador no puede estar vacío");
+       mensaje.innerText = "La búsqueda no debe estar vacía";
     } else if (buscador.value.length < 3) {
-        alert("La búsqueda debe tener al menos 3 caracteres");
+        mensaje.innerText = "La búsqueda debe tener al menos 3 caracteres";
+    } else {
         this.submit();
     }
 
 });
+
 formulariologin.addEventListener("submit", function(e) {
  e.preventDefault();
     if (email.value == "") {

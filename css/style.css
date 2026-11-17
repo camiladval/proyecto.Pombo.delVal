@@ -54,13 +54,6 @@ body{
     margin-left: 10px;
 }
 
-.forms {
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    order: 2;
-}
-
 .formsinput{
     width: 300px;
     padding: 5px;
@@ -383,6 +376,22 @@ a{
 .bienvenido {
     color: #fbeddc;
     font-family: "Montserrat", sans-serif;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    order: 2;
+    flex-wrap: wrap;
+}
+
+.obligatorio_errorheader {
+    width: 100%;
+    margin: 6px;
+    color: #fbeddc;
+    font-size: 13px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
