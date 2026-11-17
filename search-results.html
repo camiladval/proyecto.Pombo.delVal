@@ -10,75 +10,40 @@
         <title>Resultados de búsqueda</title>
     </head>
     <body>
-         <header class="menu">
+        <header class="menu">
             <a href="./index.html" class="logo2">
                 <img src="./img/CaliHomeLogo.png" alt="logo" class="logo">
             </a>
             <nav class="navheader">
-            <ul class="navarriba">
-                <li class="listahome"><a class="barra" href="./index.html">Home</a></li>
-                <li class="listahome"><a class="barra" href="./login.html">Login</a></li>
-                <li class="listahome"><a class="barra" href="./register.html">Registrarse</a></li>
-            </ul>
+                <ul class="navarriba">
+                    <li class="listahome"><a class="barra" href="./index.html">Home</a></li>
+                    <li class="listahome"><a class="barra" href="./login.html">Login</a></li>
+                    <li class="listahome"><a class="barra" href="./register.html">Registrarse</a></li>
+                </ul>
             </nav>
             <form action="./search-results.html" method="get" class="forms">
                 <input type="text" name="q" placeholder="Buscar productos..." class="formsinput">
                 <button type="submit" class="formsbutton">Buscar</button>
                 <p class="obligatorio_errorheader"></p>
             </form>
-            
         </header>
+
         <main class="contenidoresultado">
-          <aside class="productosycategoria">
-            <h2 class="categorymenu">Categorías</h2>
-            <ul class="categorymenu" id="lista-categorias">  
-                
-            </ul>
-          </aside>
+            <aside class="productosycategoria">
+                <h2 class="categorymenu">Categorías</h2>
+                <ul class="categorymenu" id="lista-categorias"></ul>
+            </aside>
+
             <div>
-                <h2 class="tituloproductos">Resultados para:"Vela"</h2>
-                <section class="resultadobusqueda">
-                <article class="busqueda">
-                    <img src="./img/vela1.jpg" alt="Vela Aromática Casablanca Coconut" class="imagenes">
-                    
-                    <h3>Vela Aromática Casablanca Coconut</h3>
-                    
-                    <p>Vela perfumada de 350 g en recipiente de cerámica con borde festoneado y diseño a rayas amarillas y blancas.</p>
-                    
-                    <p>$20.000</p>
-                    
-                    <a href="./product.html" class="boton">Ver detalle</a>
-                </article>
+                <h2 class="tituloproductos" id="titulobusqueda"></h2>
+                <section class="resultadobusqueda" id="resultados"></section>
+            </div>
+        </main>
 
-                     <article class="busqueda">
-                    <img src="./img/vela2.jpg" alt="Vela Aromática Woody Blaze" class="imagenes">
-                    
-                    <h3>Vela Aromática Woody Blaze</h3>
-                    
-                    <p>Vela perfumada de 290 g en recipiente de cerámica floral, con notas especiadas, florales y aroma a sándalo.</p>
-                    
-                    <p>$13.800</p>
-                    
-                    <a href="./product.html" class="boton">Ver detalle</a>
-                </article>
-
-            
-            </section>
-
-            <h2 class="tituloresultados">Resultados para: "..."</h2>
-                    <p class="errorbusqueda">No se encontraron productos que coincidan con tu búsqueda.</p>
-            
-            </div>  
-
-            </main>
-        
-        
-        <footer class="abajo"> 
-            
+        <footer class="abajo">
             <p>Camila del Val - Milagros Pombo</p>
-            
         </footer>
-        
+
         <script src="./js/search-results.js"></script>
         <script src="./js/saludo.js"></script>
         <script src="./js/logout.js"></script>
