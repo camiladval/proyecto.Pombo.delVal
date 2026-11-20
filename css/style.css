@@ -400,7 +400,15 @@ a{
         padding: 10px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
+
+    .forms {
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+        justify-content: center;
+    }  
 
     .logo2 {
         width: 20%;
@@ -408,10 +416,6 @@ a{
 
     .logo {
         width: 70px;
-    }
-
-    .forms {
-        width: 40%;
     }
 
     .formsbutton {
@@ -457,6 +461,12 @@ a{
 
     .imagenfija {
         width: 300px;
+    }
+
+    .listahome {
+        margin-left: 4px;
+        margin-right: 4px;
+        font-size: 12px;
     }
 
     .caracteristicas_product {
@@ -532,6 +542,7 @@ a{
 
     .navarriba {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .contenido{
